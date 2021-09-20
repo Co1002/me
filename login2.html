@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>IT'S ME - Login</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="me, profil, person, disigning, coding">
+    <meta name="description" content="Alles rund um meine Person und was ich mache.">
+    <link rel="stylesheet" href="login2.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Cdesigns Wappen.png">
+
+    <script>
+        function checkPassword(){
+            var password = document.getElementById("passwordBox");
+            var passwordText = password.value;
+            if(passwordText == "CDesigns06"){
+                return true;
+            }
+            alert("Zugriff verweigert, falsches Passwort!");
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+
+    
+            
+    <h1>Geschützte Seite</h1>
+    <p>Bitte gebe das Passwort ein: <input id="passwordBox" type="password"></p>
+
+    <a href="me2.html" onclick="return checkPassword();">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Login
+    </a>
+    
+</body>
+
+</html>
